@@ -12,7 +12,7 @@ export default class Statistics extends Component {
 
   render() {
     return (
-      <>
+      <p>
         Good: {this.props.good}
         <br />
         Neutral: {this.props.neutral}
@@ -23,7 +23,7 @@ export default class Statistics extends Component {
         <br />
         Positive feedback: {this.props.positivePercentage}%
         <br />
-      </>
+      </p>
     );
   }
 }
