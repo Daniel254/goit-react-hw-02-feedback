@@ -8,9 +8,10 @@ export default class Button extends Component {
   };
 
   render() {
+    const { onClick, name, children } = this.props;
     return (
-      <button onClick={this.props.onClick} name={this.props.name}>
-        {this.props.children}
+      <button onClick={onClick} name={name}>
+        {children}
       </button>
     );
   }

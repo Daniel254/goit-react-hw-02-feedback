@@ -5,6 +5,7 @@ export default class Notification extends Component {
   static propTypes = { message: PropTypes.string };
 
   render() {
-    return this.props.message && <p>{this.props.message}</p>;
+    const { message } = this.props;
+    return message && <p>{message}</p>;
   }
 }

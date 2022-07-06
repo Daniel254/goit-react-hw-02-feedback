@@ -8,10 +8,11 @@ export default class Section extends Component {
   };
 
   render() {
+    const { title, children } = this.props;
     return (
       <section>
-        {this.props.title && <h2>{this.props.title}</h2>}
-        {this.props.children}
+        {title && <h2>{title}</h2>}
+        {children}
       </section>
     );
   }
